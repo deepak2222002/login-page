@@ -1,0 +1,108 @@
+  body {
+      background-color: #f4f6f5;
+      font-family: 'Segoe UI', sans-serif;
+      overflow: hidden;
+  }
+
+  /* Navbar */
+  .woco-navbar {
+      background-color: #0f6b5b;
+      padding: 15px;
+  }
+
+  /* Module Card */
+  .module-card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: 0.3s ease;
+  }
+
+  .module-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .module-icon {
+      font-size: 40px;
+      color: #0f6b5b;
+      margin-bottom: 15px;
+  }
+
+  /* Custom Button */
+  .btn-woco {
+      background-color: #0f6b5b;
+      color: white;
+  }
+
+  .btn-woco:hover {
+      background-color: #0b4f43;
+      color: white;
+  }
+
+  /* Full Background Wrapper */
+  .dashboard-bg {
+      position: relative;
+      min-height: 88vh;
+      overflow: hidden;
+  }
+
+  /* Background Image Layer */
+  .dashboard-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background: url("/src/images/background.jpg") center center / cover no-repeat;
+
+      filter: blur(6px);
+      /* 🔥 Blur strength */
+      transform: scale(1.1);
+      /* Prevent blur edges cut */
+      z-index: -2;
+  }
+
+  /* Dark Green Overlay */
+  .dashboard-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+
+      background: rgba(53, 161, 145, 0.411);
+      /* Woco green overlay */
+      z-index: -1;
+  }
+
+  .module-disabled {
+      background: #f4f6f8;
+      color: #9aa4ad;
+      border: 1px solid #e1e5e8;
+  }
+
+  .module-disabled .module-icon {
+      color: #b5bcc3;
+  }
+
+  .module-disabled button {
+      background: #e4e7ea;
+      color: #8c949b;
+      border: none;
+      cursor: not-allowed;
+  }
+
+  .btn-disabled {
+      background: #555;
+      border: none;
+      color: #dcdcdc;
+  }
+
+  /* .module-card {
+      border-radius: 12px;
+      transition: all 0.25s ease;
+  }
+
+  .module-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  } */

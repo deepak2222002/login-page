@@ -1,0 +1,40 @@
+.remark-box {
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 6px;
+  max-width: 700px;
+}
+
+.remark-text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.reply-section {
+  margin-top: 10px;
+  padding-left: 25px;
+}
+
+.reply {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.reply-btn {
+  background: none;
+  border: 1px dashed orange;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.reply-btn:hover {
+  background: orange;
+  color: white;
+}
+
+.dot {
+  margin-right: 5px;
+}

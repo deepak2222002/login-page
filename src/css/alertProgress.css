@@ -1,0 +1,25 @@
+.alert-progress-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bottom progress line */
+.alert-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #0f6b5b; /* your green theme */
+  animation: progressFill 2s linear forwards;
+}
+
+/* Animation */
+@keyframes progressFill {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}

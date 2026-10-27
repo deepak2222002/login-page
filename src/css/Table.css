@@ -1,0 +1,147 @@
+.btn-edit {
+  background-color: #1fb6cf;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.btn-edit:hover {
+  background-color: #17a2b8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transform: translateY(-1px);
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  /* optional */
+}
+
+.vertical-stack {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.text-justified {
+  text-align: justify;
+}
+
+.custom-table {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.custom-table thead th {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.custom-table tbody td {
+  font-size: 12px;
+}
+
+.table-row-hover:hover {
+  background: #f8f9fa !important;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.custom-table input {
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+  padding: 4px 8px;
+}
+
+.custom-table .btn {
+  border-radius: 8px;
+}
+
+.delete-icon-btn {
+  padding: 2px !important;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.edit-icon-btn {
+  padding: 2px !important;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+/* PC/tablet — normal table */
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsive-table thead {
+  background: #f4f4f4;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 3px 5px;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+  .responsive-table thead {
+    display: none;
+  }
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    background: white;
+  }
+
+  .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 3px;
+    border: none;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    width: 20%;
+    text-align: left;
+    color: #555;
+  }
+}

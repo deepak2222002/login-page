@@ -1,0 +1,26 @@
+import React, { Component } from 'react'
+import images from '../utils/ImportImages';
+export default class Card extends Component {
+
+    render() {
+        let {applicatorNumber, applicatorChildPartNumber, applicatorChildPartType, applicatorChildPartDescription, image } = this.props;
+        return (
+            <div className="card my-3">
+                <img src={images[image]} style={{height: '150px', width : '200px', margin: 'auto'}} className="card-img-top" alt={images[image]} />
+                <div className="card-body">
+                    <h5 className="card-title">Applicator & Child Part</h5>
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+                <ul className="list-group list-group-flush">
+                    <li className="list-group-item">{applicatorNumber}</li>
+                    <li className="list-group-item">{applicatorChildPartNumber}</li>
+                    <li className="list-group-item">{applicatorChildPartDescription}</li>
+                </ul>
+                <div className="card-body">
+                    <a href="#" className="card-link">Card link</a>
+                    <a href="#" className="card-link">Another link</a>
+                </div>
+            </div>
+        )
+    }
+}

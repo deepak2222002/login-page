@@ -1,0 +1,97 @@
+/* BACKGROUND */
+/* .main-bg {
+  background: #f4f7f6;
+  min-height: 100vh;
+} */
+
+/* TITLE */
+.title-text {
+    color: #176d5b;
+    letter-spacing: 0.5px;
+}
+
+/* SEARCH */
+.search-box {
+    width: 200px;
+    border-radius: 8px;
+}
+
+/* CARD */
+.table-card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* TABLE */
+.custom-table thead {
+    background: #e8f3f1;
+}
+
+.custom-table th {
+    font-size: 12px;
+    font-weight: 600;
+    color: #176d5b;
+}
+
+.custom-table td {
+    font-size: 13px;
+    padding: 10px;
+}
+
+/* HOVER
+.custom-table tbody tr:hover {
+  background: #f1f8f6;
+} */
+
+/* ICON */
+.icon-muted {
+    color: #6c757d;
+}
+
+/* ROW BACKGROUND (FIXED + PROFESSIONAL) */
+
+.table tbody tr.status-overdue td {
+    background-color: #fdecea !important;
+}
+
+.table tbody tr.status-high td {
+    background-color: #fff4e5 !important;
+}
+
+.table tbody tr.status-normal td {
+    background-color: #e8f5e9 !important;
+}
+
+/* TEXT COLORS */
+
+.status-overdue {
+    color: #d64545;
+}
+
+.status-high {
+    color: #e6a700;
+}
+
+.status-normal {
+    color: #1f8a70;
+}
+
+.action-btn {
+    background: #176d5b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    transition: 0.2s ease;
+}
+
+.action-btn:hover {
+    color: white;
+    background: #145c4d;
+}
+
+.action-btn:active {
+    transform: scale(0.95);
+}

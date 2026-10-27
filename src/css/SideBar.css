@@ -1,0 +1,111 @@
+/* Default size */
+.sidebar-link {
+  font-size: 1rem;
+  /* base text */
+}
+
+.sidebar-link svg {
+  font-size: 1.2rem;
+  /* base icon */
+}
+
+/* sidebar link */
+.sidebar-link {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* hover effect */
+.sidebar-link:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* active link */
+.sidebar-active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* arrow indicator */
+.sidebar-arrow {
+  opacity: 0;
+  transition: all 0.2s ease;
+  font-size: 18px;
+}
+
+.sidebar-active .sidebar-arrow {
+  opacity: 1;
+  transform: translateX(4px);
+}
+
+/* scrollbar style */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #38b2ac;
+  border-radius: 10px;
+}
+
+/* Medium screens (>= 1000px) */
+@media (min-width: 1000px) {
+  .sidebar-link {
+    font-size: 1rem;
+  }
+
+  .sidebar-link svg {
+    font-size: 1rem;
+  }
+}
+
+/* Large screens (>= 1400px) */
+@media (min-width: 1400px) {
+  .sidebar-link {
+    font-size: 1.25rem;
+  }
+
+  .sidebar-link svg {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* Scroll container */
+.sidebar-scroll {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Scrollbar width */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track (background) */
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: #0f6b5b;
+}
+
+/* Scroll thumb */
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #1db69c;
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: #083e35;
+}
+
+/* Small screens (< 768px) */
+@media (max-width: 768px) {
+  .sidebar-link {
+    font-size: 0.9rem;
+  }
+
+  .sidebar-link svg {
+    font-size: 1rem;
+  }
+}

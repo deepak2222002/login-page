@@ -1,0 +1,69 @@
+.pager-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+/* LEFT */
+.pager-left {
+  color: #374151;
+}
+
+/* CENTER */
+.pager-center {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* BUTTON */
+.pager-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  padding: 4px 6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pager-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* PAGE NUMBER */
+.pager-number {
+  border: 1px solid #d1d5db;
+  background: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pager-number.active {
+  background: #0f6b5b;
+  color: white;
+  border-color: #0f6b5b;
+}
+
+/* DOTS */
+.dots {
+  padding: 0 6px;
+  color: #6b7280;
+}
+
+/* RIGHT */
+.pager-right {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pager-right select {
+  border: 1px solid #d1d5db;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

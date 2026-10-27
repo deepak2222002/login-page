@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+.alert {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transform: scale(1.03);
+  transform: translateX(100%);
+  animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+  to {
+      transform: translateX(0);
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.5s forwards;
+}
+
+@keyframes slideOut {
+  to {
+      transform: translateX(100%);
+  }
+}
+
+#staticBackdropModalCloseButton{
+  height: 30px;
+  width: 30px;
+  border: 0px;
+  background: transparent;
+	background-image: url("/src/images/close.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#staticBackdropModalCloseButton:hover{
+  opacity: 0.5;
+}
+
+.palet{
+  border: 1px solid white;
+}
